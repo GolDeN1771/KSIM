@@ -26,7 +26,7 @@ globals [
 Задав значення для **day-long-ticks** та **current-day-tick** в процедурі **setup**
 <pre>
 to setup
-  set day-long-ticks 48
+  set day-long-ticks 24
   set current-day-tick 0 
 end
 </pre>
