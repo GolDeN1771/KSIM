@@ -53,17 +53,17 @@ end
   if time-of-day >= 0 and time-of-day < 8 [
     ;; Ніч: сонце не світить
     set sun-intensity 0
-    set temperature (adjust-temparature-limits temperature - 10)
+    set temperature (adjust-temprature-limits temperature - 10)
   ]
 
   if time-of-day >= 8 and time-of-day < 16 [
     set sun-intensity 100
-    set temperature (adjust-temparature-limits temperature + 10)
+    set temperature (adjust-temprature-limits temperature + 10)
   ]
 
   if time-of-day >= 16 and time-of-day < 24 [
     set sun-intensity 50
-    set temperature (adjust-temparature-limits temperature - 5)
+    set temperature (adjust-temprature-limits temperature - 5)
   ]
 end
 </pre>
@@ -89,9 +89,9 @@ end
 ![3](evening.png)
 <br>
 
-Для зберігання адекватності температури **set temperature** буде проходити за допомогою функції **adjust-temparature-limits**
+Для зберігання адекватності температури **set temperature** буде проходити за допомогою функції **adjust-temprature-limits**
 <pre>
-to-report adjust-temparature-limits [ temper ]
+to-report adjust-temprature-limits [ temper ]
   if temper < -10 [ report -10 ]
   if temper > 40 [ report 40 ]
   report temper
