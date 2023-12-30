@@ -113,7 +113,6 @@
 - **temperature** - 15
 - **sun-intencity** - 70
 
-
 <table>
 <thead>
 <tr><th>Сила вітру</th><th>Кінцевий такт, коли листя опаде</th></tr>
